@@ -8,16 +8,18 @@ El objetivo de la API es centralizar y automatizar el flujo de información entr
 * **Desfase de stock:** Elimina errores de inventario, asegurando que solo se venda lo que realmente está disponible.
 * **Procesos manuales:** Automatiza la recepción y validación de órdenes, reduciendo los tiempos de espera y la carga administrativa.
 * **Falta de visibilidad:** Proporciona trazabilidad completa, permitiendo conocer el estado exacto de cada pedido desde que se solicita hasta que se entrega.
-
+* **Falta de visibilidad:** Integración de pago directo mediante webpay plus
+* **Falta de visibilidad:** Integración con courier directo para tiempos estimados de despacho y costos.
 ## Stack Tecnológico
 * **Lenguaje:** JavaScript (ES6+), HTML5, CSS3.
 * **Framework:** Express.js y Bootstrap.
+* **Modelamiento Base de Datos:** dbdiagram.io
 * **Base de Datos:** PostgreSQL 16 alojada en máquina virtual ubuntu.
 * **Herramientas de Construcción:** npm y Vite.
 
 ## Estructura de Carpetas
 * `src/`: Contiene toda la lógica de programación de la aplicación.
-* `docs/`: Contiene la documentación del proyecto.
+* `docs/`: Contiene la documentación, evidencias e imágenes del proyecto.
 * `Scripts/`: Contiene los scripts SQL DDL para la creación de la base de datos en la máquina virtual con Ubuntu.
 * `.gitignore`: Contiene archivos y carpetas excluidos del control de versiones.
 
