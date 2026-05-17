@@ -19,14 +19,19 @@ El objetivo de la API es centralizar y automatizar el flujo de información entr
 
 ## Estructura de Carpetas
 * `src/`: Contiene toda la lógica de programación de la aplicación.
+    * `config/`: Configuración y conexión a la Base de Datos (db.js)
+    * `controllers/`: Lógica de negocio (procesa los datos recibidos y responde al cliente)
+    * `routes/`: Definición de los endpoints (rutas como /api/productos)
+    * `app.js`: Configuración inicial de Express, Middlewares y CORS
 * `docs/`: Contiene la documentación, evidencias e imágenes del proyecto.
 * `Scripts/`: Contiene los scripts SQL DDL para la creación de la base de datos en la máquina virtual con Ubuntu.
 * `.gitignore`: Contiene archivos y carpetas excluidos del control de versiones.
+* `.index.js`: Punto de entrada oficial que enciende el servidor.
 
 ## Configuración e Instalación
 1. Clonar el repositorio.
 2. Configurar el archivo de propiedades (database, puerto).
-3. Ejecutar el comando de arranque del framework.
+3. Ejecutar el comando de arranque del framework (npm install o npm i).
 
 ## Documentación de Arquitectura (Modelo 4+1)
 Acceso a los diagramas de despliegue, comunicación y paquetes:

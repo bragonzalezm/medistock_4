@@ -1,0 +1,30 @@
+{
+  "name": "medistock",
+  "version": "1.0.0",
+  "description": "Proyecto MEDISTOCK - API RESTful",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bragonzalezm/medistock_4.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/bragonzalezm/medistock_4/issues"
+  },
+  "homepage": "https://github.com/bragonzalezm/medistock_4#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "pg": "^8.20.0"
+  }
+}
