@@ -22,16 +22,7 @@ INSERT INTO "tipo_cliente" ("nombre", "porcentaje_utilidad") VALUES
 
 -- Tipo medición
 INSERT INTO "tipo_medicion" ("nombre", "descripcion") VALUES
-('gr', 'Gramos'),
-('kg', 'Kilogramo'),
-('mg', 'Miligramo'),
-('mL', 'Mililitro'),
-('L', 'Litro'),
-('u', 'Unidad'),
-('cm', 'Centímetro'),
-('m', 'Metro'),
-('mm', 'Milímetro'),
-('cc', 'Centímetro cúbico'),
+('un', 'Unidad'),
 ('gal', 'Galón'),
 ('cj', 'Caja'),
 ('paq', 'Paquete'),
