@@ -51,7 +51,7 @@ INSERT INTO "categoria" ("nombre", "descripcion") VALUES
 INSERT INTO "tipo_documento" ("nombre") VALUES
 ('Boleta electrónica'),
 ('Factura electrónica'),
-('Guia de despacho')
+('Guia de despacho'),
 ('Nota de crédito');
 
 -- estado pago
@@ -72,7 +72,7 @@ INSERT INTO "impuesto" ("nombre", "porcentaje", "descripcion") VALUES
 ('Exento', 0, 'Sin impuestos.');
 
 --Bodegas
-INSERT INTO "bodega" ("nombre", "dirección", "id_comuna") VALUES
+INSERT INTO "bodega" ("nombre", "direccion", "id_comuna") VALUES
 ('Bodega Matriz Providencia', 'Av. Andrés Bello 2425', (SELECT "id" FROM "comuna" WHERE "nombre" = 'Providencia')),
 ('Centro de distribución Renca', 'Av. Miraflores 8953', (SELECT "id" FROM "comuna" WHERE "nombre" = 'Renca')),
 ('Centro de distribución San Bernardo', 'Freire 867', (SELECT "id" FROM "comuna" WHERE "nombre" = 'San Bernardo')),
