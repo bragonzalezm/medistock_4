@@ -18,7 +18,7 @@ INSERT INTO "region" ("id", "nombre") VALUES
 (16, 'Ñuble');
 
 -- Comunas
-INSERT INTO "comuna" ("nombre", id_region) VALUES 
+INSERT INTO "comuna" ("nombre", "id_region") VALUES 
 ('Alto Hospicio', 1),
 ('Camiña', 1),
 ('Colchane', 1),
