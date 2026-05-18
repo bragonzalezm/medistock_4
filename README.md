@@ -8,8 +8,8 @@ El objetivo de la API es centralizar y automatizar el flujo de información entr
 * **Desfase de stock:** Elimina errores de inventario, asegurando que solo se venda lo que realmente está disponible.
 * **Procesos manuales:** Automatiza la recepción y validación de órdenes, reduciendo los tiempos de espera y la carga administrativa.
 * **Falta de visibilidad:** Proporciona trazabilidad completa, permitiendo conocer el estado exacto de cada pedido desde que se solicita hasta que se entrega.
-* **Falta de visibilidad:** Integración de pago directo mediante webpay plus
-* **Falta de visibilidad:** Integración con courier directo para tiempos estimados de despacho y costos.
+* **Agilización del sistema de pagos:** Integración de pago directo mediante webpay plus
+* **Agilización de gestión de despachos:** Integración con courier directo para tiempos estimados de despacho y costos.
 ## Stack Tecnológico
 * **Lenguaje:** JavaScript (ES6+), HTML5, CSS3.
 * **Framework:** Express.js y Bootstrap.
@@ -26,7 +26,7 @@ El objetivo de la API es centralizar y automatizar el flujo de información entr
 * `docs/`: Contiene la documentación, evidencias e imágenes del proyecto.
 * `Scripts/`: Contiene los scripts SQL DDL para la creación de la base de datos en la máquina virtual con Ubuntu.
 * `.gitignore`: Contiene archivos y carpetas excluidos del control de versiones.
-* `.index.js`: Punto de entrada oficial que enciende el servidor.
+* `index.js`: Punto de entrada oficial que enciende el servidor.
 
 ## Configuración e Instalación
 1. Clonar el repositorio.
