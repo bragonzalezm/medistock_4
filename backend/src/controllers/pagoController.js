@@ -40,9 +40,11 @@ export const getConfirmarPago = async (req, res) => {
       `;
       await pool.query(consulta, [respuesta.authorization_code, token_ws, idVenta]);
 
-      res.status(200).json({ mensaje: 'Pago aprobado exitosamente', comprobante: respuesta });
+    res.redirect(`http://127.0.0.1:5500/frontend/index.html?pago=exito&orden=${idVenta}`);
+
     } else {
-      res.status(400).json({ mensaje: 'Pago rechazado por el banco', detalle: respuesta });
+      // Redirección en caso de que la tarjeta sea rechazada
+      res.redirect(`http://127.0.0.1:5500/frontend/index.html?pago=rechazado`);
     }
   } catch (error) {
     res.status(500).json({ error: error.message });

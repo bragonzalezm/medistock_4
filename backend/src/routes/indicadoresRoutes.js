@@ -4,6 +4,6 @@ import * as indicadoresController from '../controllers/indicadoresController.js'
 const router = Router();
 
 // GET /api/indicadores
-router.get('/', indicadoresController.getIndicadoresEconomicos);
+router.get('/', indicadoresController.getIndicadores);
 
 export default router;

@@ -7,7 +7,7 @@ import ingresoRoutes from './routes/ingresoRoutes.js';
 import usuarioRoutes from './routes/usuarioRoutes.js';
 import ventaRoutes from './routes/ventaRoutes.js';
 import seguimientoRoutes from './routes/seguimientoRoutes.js';
-import pagoRoutes from './routes/transbankRoutes.js';
+import pagoRoutes from './routes/pagoRoutes.js';
 import indicadoresRoutes from './routes/indicadoresRoutes.js';
 const app = express();
 
