@@ -1,5 +1,5 @@
 -- Roles para inicio de sesión
-INSERT INTO rol_usuario ("nombre", "descripcion") VALUES
+INSERT INTO "rol_usuario" ("nombre", "descripcion") VALUES
 ('Paciente','Cliente paciente particular con hospitalización en casa.'),
 ('Administrativo','Funcionario de medistock capaz de realizar reportes de movimientos, historiales de compra y venta'),
 ('Ejecutivo de ventas','Promotor de medistock, puede hacer descuentos, hacer compras en nombre de usuarios clinica o particulares'),
