@@ -12,26 +12,30 @@ El objetivo de la API es centralizar y automatizar el flujo de información entr
 * **Agilización de gestión de despachos:** Integración con courier directo para tiempos estimados de despacho y costos.
 ## Stack Tecnológico
 * **Lenguaje:** JavaScript (ES6+), HTML5, CSS3.
-* **Framework:** Express.js y Bootstrap.
+* **Framework:** Express.js y Bootstrap, NODE.js.
 * **Modelamiento Base de Datos:** dbdiagram.io
 * **Base de Datos:** PostgreSQL 16 alojada en máquina virtual ubuntu.
 * **Herramientas de Construcción:** npm y Vite.
 
 ## Estructura de Carpetas
-* `src/`: Contiene toda la lógica de programación de la aplicación.
-    * `config/`: Configuración y conexión a la Base de Datos (db.js)
-    * `controllers/`: Lógica de negocio (procesa los datos recibidos y responde al cliente)
-    * `routes/`: Definición de los endpoints (rutas como /api/productos)
-    * `app.js`: Configuración inicial de Express, Middlewares y CORS
+
+* `backend/`: Contiene todos los archivos relacionados al backend del proyecto.
+    * `scripts/`: Contiene los scripts SQL DDL para la creación de la base de datos en la máquina virtual con Ubuntu.
+    * `src/`: Contiene toda la lógica de programación de la aplicación.
+        * `config/`: Configuración y conexión a la Base de Datos (db.js)
+        * `controllers/`: Lógica de negocio (procesa los datos recibidos y responde al cliente)
+        * `routes/`: Definición de los endpoints (rutas como /api/productos)
+        * `app.js`: Configuración inicial de Express, Middlewares y CORS
+* `frontend/`: Contiene todos los archivos relacionados al frontend del proyecto.
+    * `js/`: Contiene los archivos api.js y app.js.
 * `docs/`: Contiene la documentación, evidencias e imágenes del proyecto.
-* `Scripts/`: Contiene los scripts SQL DDL para la creación de la base de datos en la máquina virtual con Ubuntu.
 * `.gitignore`: Contiene archivos y carpetas excluidos del control de versiones.
 * `index.js`: Punto de entrada oficial que enciende el servidor.
 
 ## Configuración e Instalación
 1. Clonar el repositorio.
 2. Configurar el archivo de propiedades (database, puerto).
-3. Ejecutar el comando de arranque del framework (npm install o npm i).
+3. Ejecutar el comando de arranque del framework (npm run start).
 
 ## Documentación de Arquitectura (Modelo 4+1)
 Acceso a los diagramas de despliegue, comunicación y paquetes:
@@ -39,3 +43,4 @@ Acceso a los diagramas de despliegue, comunicación y paquetes:
 
 ## Pruebas de API
 * **Postman:**
+* **Newman:**
