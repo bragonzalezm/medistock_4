@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Punto de Venta - Medistock</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <style>
+        /* Estilos específicos de la grilla */
+        .layout-ventas {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 25px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto; /* Centra el bloque en pantallas grandes */
+            align-items: start;
+        }
+        .grilla-productos {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 15px;
+        }
+        .producto-card {
+            background: white;
+            padding: 20px;
+            border: 1px solid rgba(48, 65, 78, 0.1);
+            border-radius: var(--borde-radio);
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+        .panel-carrito {
+            background: white;
+            padding: 25px;
+            border-radius: var(--borde-radio);
+            box-shadow: 0 4px 15px rgba(48, 65, 78, 0.08);
+            position: sticky;
+            top: 20px;
+            border: 1px solid rgba(48, 65, 78, 0.1);
+        }
+        .item-carrito {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #f1f5f9;
+            padding: 12px 0;
+            font-size: 14px;
+        }
+        /* Anulamos botones globales para el nav */
+        .btn-peligro {
+            background-color: #ef4444;
+            padding: 8px 16px;
+            margin: 0;
+        }
+        .btn-peligro:hover { background-color: #dc2626; }
+    </style>
+</head>
+<body style="display: block; margin: 0; padding: 0; height: auto;">
+
+    <nav style="width: 100%; background: var(--color-secundario); padding: 15px 30px; color: white; display: flex; justify-content: space-between; align-items: center; box-sizing: border-box;">
+        <h2 style="color: white; margin: 0; font-size: 1.5rem;">MEDISTOCK</h2>
+        <button id="btn-cerrar-sesion" class="btn-peligro">Cerrar Sesión</button>
+    </nav>
+
+    <div class="layout-ventas">
+        <div>
+            <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #f1f5f9;">
+                <h3 style="color: var(--color-secundario); margin: 0;">Catálogo de Productos</h3>
+                <small id="texto-uf" style="color: var(--color-primario); font-weight: bold; font-size: 1rem;">Cargando UF...</small>
+            </div>
+            
+            <div id="contenedor-productos" class="grilla-productos">
+                </div>
+        </div>
+
+        <div class="panel-carrito">
+            <h3 style="color: var(--color-secundario); margin-top: 0;">Tu Pedido</h3>
+            <div id="lista-carrito">
+                <p style="text-align: center; color: #94a3b8; margin: 30px 0;">El carrito está vacío</p>
+            </div>
+            <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 20px 0;">
+            
+            <div style="display: flex; justify-content: space-between; margin-bottom: 8px; color: #64748b;">
+                <span>Neto:</span> <span id="total-neto">$0</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; margin-bottom: 15px; color: #64748b;">
+                <span>IVA (19%):</span> <span id="total-iva">$0</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; font-weight: bold; font-size: 1.3rem; margin-bottom: 20px; color: var(--color-secundario);">
+                <span>Total Bruto:</span> <span id="total-bruto">$0</span>
+            </div>
+            
+            <button id="btn-pagar" style="width: 100%;" disabled>Confirmar y Pagar</button>
+            <p id="mensaje-pago" style="color: red; text-align: center; margin-top: 10px;"></p>
+        </div>
+    </div>
+
+    <script type="module" src="./ventas.js"></script>
+</body>
+</html>

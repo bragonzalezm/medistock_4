@@ -6,17 +6,37 @@
     <link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
-    <h2>Registro de Nuevo Usuario</h2>
-    <form id="formulario-registro">
-        <input type="text" id="reg-nombre" placeholder="Nombre completo" required maxlength="60">
-        <input type="text" id="reg-appa" placeholder="Apellido paterno" required maxlength="60">
-        <input type="text" id="reg-apma" placeholder="Apellido materno" required maxlength="60">
-        <input type="email" id="reg-correo" placeholder="Correo electrónico" required maxlength="60">
-        <input type="text" id="reg-telefono" placeholder="Teléfono" maxlength="9">
-        <input type="password" id="reg-contrasena" placeholder="Contraseña" required maxlength="60">
-        <button type="submit">Registrar</button>
-    </form>
-    <p id="mensaje-error-reg" style="color: red;"></p>
+    
+    <div class="contenedor-auth">
+        
+        <img src="../assets/medistockicono.png" alt="Logo de Medistock" style="width: 120px; margin-bottom: 10px;">
+        
+        <h2>Registro de Usuario</h2>
+        
+        <form id="formulario-registro">
+            
+            <input type="text" id="reg-nombre" placeholder="Nombre completo" required maxlength="60">
+            
+            <div style="display: flex; gap: 15px;">
+                <input type="text" id="reg-appa" placeholder="Apellido paterno" required maxlength="60" style="flex: 1;">
+                <input type="text" id="reg-apma" placeholder="Apellido materno" required maxlength="60" style="flex: 1;">
+            </div>
+
+            <input type="email" id="reg-correo" placeholder="Correo electrónico" required maxlength="60">
+            <input type="text" id="reg-telefono" placeholder="Teléfono" maxlength="9">
+            <input type="password" id="reg-contrasena" placeholder="Contraseña" required maxlength="60">
+            
+            <button type="submit">Registrar</button>
+        </form>
+        
+        <p id="mensaje-error-reg" style="color: red;"></p>
+
+        <div style="margin-top: 15px; text-align: center;">
+            <p>¿Ya tienes una cuenta? <a href="./login.html">Inicia sesión aquí</a></p>
+            <a href="../index.html">Volver al Inicio</a>
+        </div>
+
+    </div>
 
     <script type="module" src="./registro.js"></script>
 </body>

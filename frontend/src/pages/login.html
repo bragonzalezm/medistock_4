@@ -6,13 +6,26 @@
     <link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
-    <h2>Iniciar Sesión</h2>
-    <form id="formulario-login">
-        <input type="email" id="log-correo" placeholder="Correo electrónico" required>
-        <input type="password" id="log-contrasena" placeholder="Contraseña" required>
-        <button type="submit">Entrar</button>
-    </form>
-    <p id="mensaje-error-log" style="color: red;"></p>
+    <div class="contenedor-auth">
+        
+        <img src="../assets/medistockicono.png" alt="Logo de Medistock" style="width: 120px; margin-bottom: 10px;">
+        
+        <h2>Iniciar Sesión</h2>
+        
+        <form id="formulario-login">
+            <input type="email" id="log-correo" placeholder="Correo electrónico" required>
+            <input type="password" id="log-contrasena" placeholder="Contraseña" required>
+            <button type="submit">Entrar</button>
+        </form>
+        
+        <p id="mensaje-error-log" style="color: red;"></p>
+
+        <div style="margin-top: 15px; text-align: center;">
+            <p>¿No tienes una cuenta? <a href="./registro.html">Regístrate aquí</a></p>
+            <a href="/frontend/index.html">Volver al Inicio</a>
+        </div>
+        
+    </div>
 
     <script type="module" src="./login.js"></script>
 </body>

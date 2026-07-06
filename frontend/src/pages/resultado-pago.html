@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado de la Transacción - Medistock</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <style>
+        /* Pequeños ajustes exclusivos para la caja de resumen de orden */
+        .caja-resumen {
+            display: none; /* Oculto por defecto, se muestra por JS si hay éxito */
+            background-color: var(--color-formulario);
+            padding: 15px;
+            border-radius: var(--borde-radio);
+            border: 1px solid #e2e8f0;
+            margin: 20px 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor-auth" style="text-align: center;">
+        
+        <img src="../assets/logo-medistock.png" alt="Logo de Medistock" style="width: 120px; margin-bottom: 20px;">
+        
+        <div id="icono-estado" style="font-size: 60px; margin-bottom: 10px;">⏳</div>
+        <h2 id="titulo-estado" style="margin-bottom: 10px;">Procesando...</h2>
+        <p id="mensaje-estado" style="color: #64748b; font-size: 15px; line-height: 1.5; margin-top: 0;"></p>
+        
+        <div id="caja-orden" class="caja-resumen">
+            <span style="color: #64748b; font-size: 14px;">Orden de Compra Webpay</span><br>
+            <strong id="numero-orden" style="font-size: 18px; color: var(--color-secundario);"></strong>
+        </div>
+
+        <a href="./ventas.html" style="width: 100%;">
+            <button style="width: 100%;">Volver al Punto de Venta</button>
+        </a>
+        
+    </div>
+
+    <script type="module" src="./resultado-pago.js"></script>
+</body>
+</html>

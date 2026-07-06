@@ -1,0 +1,8 @@
+Datos tarjeta simulada
+	-N tarjeta: 4051 8856 0044 6623
+	-CVV: 123
+	-cualquier fecha de expiración mayor a la actual
+
+Portal Banco simulado
+	-RUT: 11.111.111-1
+	-Contraseña: 123

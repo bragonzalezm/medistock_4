@@ -33,6 +33,8 @@ El objetivo de la API es centralizar y automatizar el flujo de información entr
         * `services/`: Funciones aisladas para conectar con los endpoints del backend (ej. authService.js).
         * `components/`: Piezas visuales reutilizables (formularios, botones, tablas).
         * `pages/`: Vistas completas que ensamblan los componentes (ej. Login, Registro, Dashboard).
+        * `styles/`: Contiene archivo css para el estilo de las paginas.
+        * `assets/`: Contiene imagenes y archivos multimedia.
     * `app.js`: Punto de entrada que inicializa el enrutamiento visual del frontend.
 * `docs/`: Contiene la documentación, evidencias e imágenes del proyecto.
 * `.gitignore`: Contiene archivos y carpetas excluidos del control de versiones.

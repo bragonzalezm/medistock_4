@@ -20,7 +20,7 @@ formulario.addEventListener('submit', async (evento) => {
     
     alert('Inicio de sesión exitoso');
     // Redirigimos al panel principal del sistema
-    window.location.href = './dashboard.html';
+    window.location.href = './ventas.html';
 
   } catch (error) {
     mensajeError.textContent = error.message;

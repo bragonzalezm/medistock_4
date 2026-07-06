@@ -2,23 +2,151 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Bienvenido - Medistock</title>
-    <link rel="stylesheet" href="../frontend/src/styles/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenidos a MEDISTOCK</title>
+    <link rel="stylesheet" href="./src/styles/main.css">
+    
+    <style>
+        /* Ajustes estructurales exclusivos para la vista de aterrizaje */
+        body {
+            /* Sobrescribimos el centrado absoluto del main.css para permitir scroll */
+            align-items: flex-start; 
+            height: auto;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .landing-container {
+            max-width: 800px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .hero img {
+            width: 160px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 {
+            color: var(--color-secundario);
+            font-size: 2.5rem;
+            margin: 0 0 10px 0;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--color-texto);
+            margin-top: 0;
+        }
+
+        .acciones {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .acciones button {
+            margin-top: 0; /* Anula el margen superior del main.css */
+            padding: 12px 30px;
+            font-size: 1.1rem;
+        }
+
+        .btn-secundario {
+            background-color: transparent;
+            color: var(--color-primario);
+            border: 2px solid var(--color-primario);
+        }
+
+        .btn-secundario:hover {
+            background-color: var(--color-primario);
+            color: #ffffff;
+        }
+
+        .contenido-info {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .tarjeta-info {
+            background: var(--color-formulario);
+            padding: 30px;
+            border-radius: var(--borde-radio);
+            box-shadow: 0 4px 15px rgba(48, 65, 78, 0.05);
+            border: 1px solid rgba(48, 65, 78, 0.05);
+        }
+
+        .tarjeta-info h2 {
+            color: var(--color-primario);
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .tarjeta-info p {
+            text-align: left;
+            line-height: 1.6;
+            font-size: 1.05rem;
+            margin: 0;
+        }
+
+        /* Diseño responsivo para pantallas más grandes */
+        @media (min-width: 768px) {
+            .grid-mitad {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>MEDISTOCK</h1>
-        <p>Sistema centralizado de gestión de insumos médicos.</p>
-    </header>
 
-    <main>
-        <h2>Acceso al Sistema</h2>
-        <p>Por favor, identifícate o crea una cuenta para operar en la plataforma.</p>
+    <div class="landing-container">
         
-        <nav>
-            <a href="./src/pages/login.html"><button>Iniciar Sesión</button></a>
-            <a href="./src/pages/registro.html"><button>Registrarse</button></a>
-        </nav>
-    </main>
+        <header class="hero">
+            <img src="./src/assets/medistockicono.png" alt="Logo MEDISTOCK">
+            <h1>MEDISTOCK</h1>
+            <p>Sistema Centralizado de Gestión de Insumos Médicos</p>
+            
+            <div class="acciones">
+                <a href="./src/pages/login.html">
+                    <button>Iniciar Sesión</button>
+                </a>
+                <a href="./src/pages/registro.html">
+                    <button class="btn-secundario">Crear Cuenta</button>
+                </a>
+            </div>
+        </header>
+
+        <main class="contenido-info">
+            
+            <section class="tarjeta-info">
+                <h2>Quiénes Somos</h2>
+                <p>Somos una plataforma tecnológica especializada en la trazabilidad y el control de inventarios para el sector de la salud. Nuestro sistema está diseñado para ofrecer precisión, seguridad y eficiencia en la administración de recursos críticos, garantizando que los recintos médicos siempre cuenten con el material necesario para su operación diaria.</p>
+            </section>
+
+            <div class="grid-mitad">
+                <section class="tarjeta-info">
+                    <h2>Nuestra Misión</h2>
+                    <p>Proveer a clínicas, hospitales y centros de salud una herramienta digital intuitiva y robusta que automatice el control de su stock, reduciendo el margen de error humano y optimizando los tiempos de respuesta en la cadena de abastecimiento médico.</p>
+                </section>
+    
+                <section class="tarjeta-info">
+                    <h2>Nuestra Visión</h2>
+                    <p>Convertirnos en el estándar nacional de gestión de infraestructura clínica, consolidando un ecosistema tecnológico donde la disponibilidad de los insumos médicos sea siempre predecible, transparente y segura para todas las instituciones de salud.</p>
+                </section>
+            </div>
+
+        </main>
+
+    </div>
+
 </body>
 </html>
