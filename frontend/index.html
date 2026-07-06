@@ -2,47 +2,23 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MEDISTOCK - Sistema de Gestión</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Bienvenido - Medistock</title>
+    <link rel="stylesheet" href="../frontend/src/styles/main.css">
 </head>
-<body class="bg-light">
+<body>
+    <header>
+        <h1>MEDISTOCK</h1>
+        <p>Sistema centralizado de gestión de insumos médicos.</p>
+    </header>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#">🏥 MEDISTOCK</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="nav-catalogo">Catálogo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-warning fw-bold" href="#" id="nav-carrito">🛒 Carrito (0)</a>
-                    </li>
-                    <li class="nav-item d-none" id="contenedor-logistica">
-                        <a class="nav-link text-info fw-bold" href="#" id="nav-logistica">📦 Logística</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="nav-login">Iniciar Sesión</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <main class="container mt-5" id="app-container">
-        <div class="text-center mt-5">
-            <h2>Bienvenido a Medistock</h2>
-            <p class="lead">Selecciona una opción en el menú superior para comenzar.</p>
-        </div>
+    <main>
+        <h2>Acceso al Sistema</h2>
+        <p>Por favor, identifícate o crea una cuenta para operar en la plataforma.</p>
+        
+        <nav>
+            <a href="./src/pages/login.html"><button>Iniciar Sesión</button></a>
+            <a href="./src/pages/registro.html"><button>Registrarse</button></a>
+        </nav>
     </main>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/api.js"></script>
-    <script src="js/app.js"></script>
 </body>
 </html>

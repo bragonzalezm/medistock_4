@@ -21,13 +21,19 @@ El objetivo de la API es centralizar y automatizar el flujo de información entr
 
 * `backend/`: Contiene todos los archivos relacionados al backend del proyecto.
     * `scripts/`: Contiene los scripts SQL DDL para la creación de la base de datos en la máquina virtual con Ubuntu.
-    * `src/`: Contiene toda la lógica de programación de la aplicación.
+    * `src/`: Contiene toda la lógica de programación de la API.
         * `config/`: Configuración y conexión a la Base de Datos (db.js)
-        * `controllers/`: Lógica de negocio (procesa los datos recibidos y responde al cliente)
-        * `routes/`: Definición de los endpoints (rutas como /api/productos)
-        * `app.js`: Configuración inicial de Express, Middlewares y CORS
-* `frontend/`: Contiene todos los archivos relacionados al frontend del proyecto.
-    * `js/`: Contiene los archivos api.js y app.js.
+        * `routes/`: Definición de los endpoints y verbos HTTP (rutas como POST /api/registro).
+        * `controllers/`: Intermediarios que reciben las peticiones HTTP y envían respuestas al cliente.
+        * `services/`: Lógica de negocio (encriptación, validaciones, generación de tokens).
+        * `repositories/`: Acceso directo a los datos y ejecución de consultas SQL en PostgreSQL.
+        * `app.js`: Configuración inicial de Express, Middlewares y CORS.
+* `frontend/`: Contiene la interfaz gráfica y la interacción con el usuario.
+    * `src/`: Contiene el código fuente modularizado del cliente.
+        * `services/`: Funciones aisladas para conectar con los endpoints del backend (ej. authService.js).
+        * `components/`: Piezas visuales reutilizables (formularios, botones, tablas).
+        * `pages/`: Vistas completas que ensamblan los componentes (ej. Login, Registro, Dashboard).
+    * `app.js`: Punto de entrada que inicializa el enrutamiento visual del frontend.
 * `docs/`: Contiene la documentación, evidencias e imágenes del proyecto.
 * `.gitignore`: Contiene archivos y carpetas excluidos del control de versiones.
 * `index.js`: Punto de entrada oficial que enciende el servidor.

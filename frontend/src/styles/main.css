@@ -1,0 +1,100 @@
+
+:root {
+    /* Paleta de colores MEDISTOCK */
+    --color-primario: #1eb186; 
+    --color-secundario: #30414e; 
+    --color-fondo: #ffffff; 
+    --color-formulario: #f8fafc; 
+    --color-texto: #30414e;
+    --borde-radio: 6px;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor principal para alinear el logo y el formulario */
+.contenedor-auth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+h2 {
+    color: var(--color-secundario);
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+
+form {
+    background: var(--color-formulario);
+    padding: 35px 30px;
+    border-radius: var(--borde-radio);
+    /* Sombra suave teñida con el color secundario para dar profundidad sin ensuciar */
+    box-shadow: 0 10px 25px rgba(48, 65, 78, 0.08); 
+    border: 1px solid rgba(48, 65, 78, 0.05);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    box-sizing: border-box;
+}
+
+input {
+    padding: 14px;
+    border: 1px solid #d1d5db;
+    border-radius: var(--borde-radio);
+    font-size: 15px;
+    color: var(--color-texto);
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
+}
+
+/* Efecto al hacer clic en un input */
+input:focus {
+    border-color: var(--color-primario);
+    box-shadow: 0 0 0 3px rgba(30, 177, 134, 0.15);
+}
+
+button {
+    background-color: var(--color-primario);
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    border-radius: var(--borde-radio);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #17936f; /* Un tono más oscuro del turquesa */
+}
+
+a {
+    color: var(--color-primario);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+}

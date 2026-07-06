@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro - Medistock</title>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+    <h2>Registro de Nuevo Usuario</h2>
+    <form id="formulario-registro">
+        <input type="text" id="reg-nombre" placeholder="Nombre completo" required maxlength="60">
+        <input type="text" id="reg-appa" placeholder="Apellido paterno" required maxlength="60">
+        <input type="text" id="reg-apma" placeholder="Apellido materno" required maxlength="60">
+        <input type="email" id="reg-correo" placeholder="Correo electrónico" required maxlength="60">
+        <input type="text" id="reg-telefono" placeholder="Teléfono" maxlength="9">
+        <input type="password" id="reg-contrasena" placeholder="Contraseña" required maxlength="60">
+        <button type="submit">Registrar</button>
+    </form>
+    <p id="mensaje-error-reg" style="color: red;"></p>
+
+    <script type="module" src="./registro.js"></script>
+</body>
+</html>
