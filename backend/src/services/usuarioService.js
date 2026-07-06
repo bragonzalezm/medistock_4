@@ -5,6 +5,7 @@ import jwt from 'jsonwebtoken';
 // En un entorno real, esta clave se guarda en un archivo oculto .env
 const FIRMA_SECRETA = 'medistock_clave_super_segura_2026'; 
 
+// ----------- REGISTRO DE USUARIO --------------
 export const registrar = async (datosUsuario) => {
   // 1. Verificamos que el correo no exista
   const usuarioExiste = await usuarioRepository.buscarPorCorreo(datosUsuario.correo_electronico);
@@ -20,7 +21,10 @@ export const registrar = async (datosUsuario) => {
   datosUsuario.contrasena = contrasenaEncriptada;
   return await usuarioRepository.registrarUsuario(datosUsuario);
 };
+// -----------------------------------------------------------------
 
+
+// ----------- INICIO DE SESION --------------
 export const login = async (correo, contrasenaPlana) => {
   // 1. Buscamos al usuario
   const usuario = await usuarioRepository.buscarPorCorreo(correo);
